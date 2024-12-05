@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.infoBox{
+    font-family: 'Itim', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    &-logo{
+        img{
+            height: 200px;
+        }
+    }
+    &-title, &-subtitle{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    &-title{
+        font-size: 2rem;
+    }
+    &-contactInfo{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+          .icon {
+            font-size: 24px;
+            color: #523E27;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            color: #523E27;
+            p{
+                margin: 0;
+            }
+          }
+    }
+    .important{
+        font-weight: 800;
+        color: #523E27;
+
+    }
+}
