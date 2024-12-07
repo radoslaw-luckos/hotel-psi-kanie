@@ -10,7 +10,7 @@ const InBuildComponent = (props: Props) => {
   return (
     <section className='infoBox'>
         <div className="infoBox-logo">
-          <StaticImage src="../images/logo.png" alt={''}/>
+          <StaticImage src="../images/logo.png" alt={''} height={200}/>
         </div>
         <h1 className="infoBox-title"><span className='important'>Hau, hau! Strona w budowie!</span><br/><br/>
         Cześć! Tu zespół psiego hotelu Kanie. </h1>

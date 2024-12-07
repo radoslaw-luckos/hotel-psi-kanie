@@ -7,8 +7,9 @@
     align-items: center; 
     font-family: 'Itim', sans-serif;
     &-logo{
+        max-height: 200px;
         img{
-            height: 200px;
+            max-height:100%;
         }
     }
     &-title, &-subtitle{
