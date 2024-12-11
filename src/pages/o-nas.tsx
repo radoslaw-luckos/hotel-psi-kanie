@@ -1,12 +1,17 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from 'gatsby'
+import type {PageProps } from 'gatsby'
 import Layout from '../components/Layout'
+import SEO from "../components/SEO"
 
 const AboutPage: React.FC<PageProps>  = () => {
   return (
-    <Layout>
-      <main>O nas</main>
-    </Layout>
+    <>
+      <SEO title="O nas" description="Dowiedz się więcej o naszym hotelu"/>
+      <Layout>
+        <main>O nas</main>
+      </Layout>
+    </>
+    
   )
 }
 
