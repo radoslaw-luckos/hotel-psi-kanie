@@ -1,51 +1,46 @@
-*, *::before, *::after{
-    box-sizing: border-box; 
+*, *:before, *:after{
+    box-sizing: border-box;
 }
 
-*{
-    margin: 0; 
-    padding: 0; 
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: $font-primary;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
 }
 
-ul[role='list'], ol[role='list']{
-    list-style: none; 
+footer, header, nav, section, main{
+    display: block;
 }
 
-html:focus-within{
-    scroll-behavior: smooth; 
+body{
+    line-height: 1;
 }
 
-a:not([class]){
-    text-decoration-skip-ink: auto; 
+ol, ul{
+    list-style: none;
 }
 
-img, picture, svg, video, canvas{
-    max-width: 100%;
-    height: auto; 
-    vertical-align: middle; 
-    font-style: italic; 
-    background-repeat: no-repeat; 
-    background-size: cover;
+blockquote, q{
+    quotes: none;
 }
 
-input, button, textarea, select{
-    font: inherit; 
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
 }
 
-@media (prefers-reduced-motion: reduce){
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-        transition: none;
-    }
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-body, html{
-    height: 100%; 
-    scroll-behavior: smooth; 
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
 }
