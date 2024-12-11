@@ -2,16 +2,14 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { FaFlag, FaPhoneAlt, FaEnvelope, FaFacebook, FaInstagram } from 'react-icons/fa';
 import '../styles/components/InBuildComponent.scss'
-import { Link } from 'gatsby';
+import LogoBig from '../images/logo-big.svg'
 
 type Props = {}
 
 const InBuildComponent = (props: Props) => {
   return (
     <section className='infoBox'>
-        <div className="infoBox-logo">
-          <StaticImage src="../images/logo.png" alt={''} height={200}/>
-        </div>
+        <LogoBig className="infoBox-logo"/>
         <h1 className="infoBox-title"><span className='important'>Hau, hau! Strona w budowie!</span><br/><br/>
         Cześć! Tu zespół psiego hotelu Kanie. </h1>
         <h2 className='infoBox-subtitle'>
