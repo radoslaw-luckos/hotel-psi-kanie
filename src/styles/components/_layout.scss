@@ -2,10 +2,21 @@
     min-height: 100vh;
     position: relative;
     z-index: 100;
+    .content{
+        padding-top: calc($padding-small + 5rem);
+    }
     .background-icon{
         pointer-events: none;
         display: none;
         z-index: 0;
         color: $color-bg;
+    }
+}
+
+@media (min-width: $media-medium) {
+    .layout{
+        .background-icon{
+            display: block;
+        }
     }
 }

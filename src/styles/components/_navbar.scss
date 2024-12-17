@@ -1,0 +1,56 @@
+.navbar{
+    background-color: $color-bg;
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $padding-xs;
+    &__logo img{
+        max-height: 5rem;
+    }
+    &__hamburger{
+        font-size: 3rem;
+        color: $color-highlight;
+    }
+    &__menu{
+        display: none;
+        &--mobile .link, .link{
+            text-decoration: none;
+            font-family: $font-accent;
+            font-size: 1.2rem;
+            color: $color-highlight;
+            .icon {
+                display: none;
+            }
+            &--active{
+                color: $color-accent;
+                position: relative;
+                .icon{
+                    display: inline;
+                    position: absolute;
+                    top: 0;
+                    left: -$padding-xs;
+                    transform: translateX(-100%);
+                }
+            }
+        }
+        &--mobile{
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translateY(100%);
+            height: calc(100vh - 5rem);
+            width: 100vw;
+            background-color: $color-bg;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+    }
+}

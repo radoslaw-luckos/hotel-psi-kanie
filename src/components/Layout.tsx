@@ -61,10 +61,10 @@ const Layout = ({children, iconsCount = 50}:Props) => {
     <div className='layout'>
         {generateIconsBg()}
         <Navbar/>
-        <div className="content">
+        <main className="content">
             {/* content for each page */}
             {children}
-        </div>
+        </main>
         <Footer/>
     </div>
   )
