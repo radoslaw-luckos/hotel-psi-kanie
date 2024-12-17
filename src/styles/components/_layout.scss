@@ -4,6 +4,7 @@
     z-index: 100;
     .background-icon{
         pointer-events: none;
+        display: none;
         z-index: 0;
         color: $color-bg;
     }
