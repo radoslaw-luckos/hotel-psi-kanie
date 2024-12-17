@@ -49,7 +49,6 @@ const Layout = ({children, iconsCount = 50}:Props) => {
             position: "absolute",
             top: `${position?.y}%`,
             left: `${position?.x}%`,
-            color: '#E8CFC1',
             transform: `translate(-50%, -50%) rotate(${Math.random() * 360}deg)`,
             opacity: Math.random() * 0.25 + 0.1, // Przezroczystość od 0.1 do 0.35
           }}
