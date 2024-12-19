@@ -1,0 +1,67 @@
+.footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: $color-highlight;
+    color: $color-bg;
+    padding-top: $padding-xs;
+    position: relative;
+    .paws{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100vw;
+        padding: $padding-xs 0;
+    }
+    .contact{
+        margin: $padding-small;
+        &__option{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            padding: $padding-small;
+        }
+        p{
+            padding-top: $padding-xs;
+            font-family: $font-accent;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+        }
+    }
+    .socials{
+        background-color: $color-bg;
+        color: $color-highlight;
+        width: 70vw;
+        height: 70vw;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        &__logo{
+            max-width: 10rem;
+        }
+        &__links{
+            font-size: 2.5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            a{
+                text-decoration: none;
+                color: $color-highlight;
+            }            
+
+        }
+    }
+    .copyrights{
+        margin: $padding-small;
+        font-family: $font-accent;
+        line-height: 1.2rem;
+    }
+}

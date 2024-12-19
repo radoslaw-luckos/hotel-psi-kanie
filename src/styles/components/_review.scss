@@ -1,0 +1,55 @@
+.controls {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.4rem;
+    gap: 1.25rem;
+    margin: $padding-small;
+    color: $color-accent;
+} 
+.review {
+    &__presentation{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: $padding-small;
+        gap: 2rem;
+        .photo{
+            width: 9rem;
+            height: 9rem;
+            object-fit: contain;
+            border: 5px solid $color-highlight;
+            border-radius: 50%;
+        }
+        .reviewers-name{
+            font-size: 1.2rem;
+            color: $color-highlight;
+            font-weight: 200;
+            font-family: $font-accent;
+        }
+    }
+   
+    &__content{
+        margin: $padding-small;
+        position: relative;
+        text-align: justify;
+        font-size: .9rem;
+        font-weight: 300;
+        padding: $padding-xs;
+    }
+    &__quote{
+        position: absolute;
+        font-size: .5rem;
+        font-family: $font-primary;
+        &--start{
+            left: 0;
+            top: 0;
+        }
+        &--end{
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

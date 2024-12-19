@@ -1,0 +1,28 @@
+.title{
+    font-size: 2rem;
+    color: $color-accent;
+    font-family: $font-accent;
+    text-align: center;
+    margin: $padding-xs;
+    margin-top: $padding-small;
+    line-height: 2.5rem;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: $color-highlight;
+    text-align: center;
+    margin: $padding-xs;
+    font-family: $font-accent;
+}
+
+.section-title{
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: $color-accent;
+    text-align: center;
+    margin: $padding-small;
+    margin-top: $padding-medium;
+    font-family: $font-accent;
+}

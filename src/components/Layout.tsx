@@ -11,7 +11,7 @@ type Props = {
 const ICONS = [IoPawSharp];
 
 
-const Layout = ({children, iconsCount = 50}:Props) => {
+const Layout = ({children, iconsCount = 20}:Props) => {
 
   const generateIconsBg = () => {
 
@@ -23,7 +23,7 @@ const Layout = ({children, iconsCount = 50}:Props) => {
       // Sprawdzanie, czy współrzędne już istnieją
       const isTooClose = POSITIONS.some(pos => {
         const distance = Math.sqrt((pos.x - x) ** 2 + (pos.y - y) ** 2);
-        return distance < 10;
+        return distance < 12;
       });
 
       if (isTooClose) {

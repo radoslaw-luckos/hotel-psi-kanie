@@ -1,0 +1,34 @@
+.button{
+    padding: $padding-small;  
+    margin: $padding-small;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &__text{
+        color: $color-highlight;
+        font-family: $font-accent; 
+        font-size: .9rem;
+        text-decoration: none;
+    }     
+    &__icon{
+        font-size: 1rem;
+        color: $color-highlight;
+        margin-inline: $padding-xs;
+    }
+    &--left{
+        border-radius: 0px 30px 30px 30px;
+    }
+    &--filled{
+        border: none;
+        background-color: $color-bg;
+    }
+    &--right{
+        border-radius:  30px 0px 30px 30px;
+    }
+    &--bordered{
+        border: 3px solid $color-highlight;
+        background:transparent;
+    }
+}

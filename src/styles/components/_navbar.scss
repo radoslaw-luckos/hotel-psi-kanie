@@ -1,6 +1,7 @@
 .navbar{
-    background-color: $color-bg;
     position: fixed;
+    z-index: 200;
+    background-color: $color-bg;
     width: 100vw;
     height: 5rem;
     display: flex;
@@ -50,7 +51,6 @@
             flex-flow: column nowrap;
             align-items: center;
             justify-content: space-around;
-
         }
     }
 }
