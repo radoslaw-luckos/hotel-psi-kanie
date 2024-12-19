@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMail, IoFlagSharp, IoLogoFacebook, IoLogoInstagram, IoPawSharp} from "react-icons/io5";
 import { HiPhone } from 'react-icons/hi2'
 import { Link } from 'gatsby';
@@ -8,11 +8,24 @@ type Props = {}
 
 const Footer = (props: Props) => {
 
-  const getBrowserWidth = (): number => window.innerWidth;
+  const [windowWidth, setWindowWidth] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth);
+
+      const handleResize = () => setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
 
   const renderIcons = (): JSX.Element[] => {
-    const width = getBrowserWidth();
-    const numberOfIcons = Math.floor(width / 50);
+    const numberOfIcons = Math.floor(windowWidth / 50);
 
     return Array.from({ length: numberOfIcons }, (_, index) => (
       <IoPawSharp key={index}/>
@@ -48,6 +61,6 @@ const Footer = (props: Props) => {
 © Hotel Psi w Kaniach 2024.<br/>Wszystkie prawa zastrzeżone.<br/>Wdrożenie: Radosław Łuckoś</p>
     </footer>
   )
-}
+};
 
 export default Footer
