@@ -8,6 +8,9 @@
     gap: 1.25rem;
     margin: $padding-small;
     color: $color-accent;
+    &__icon:nth-of-type(2){
+        cursor:auto;
+    }
 } 
 .review {
     &__presentation{

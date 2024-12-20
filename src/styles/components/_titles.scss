@@ -25,4 +25,12 @@
     margin: $padding-small;
     margin-top: $padding-medium;
     font-family: $font-accent;
+    &--dark{
+        color: $color-highlight;
+    }
+}
+
+.important{
+    color: $color-highlight;
+    font-weight: 700;
 }

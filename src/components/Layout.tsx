@@ -6,7 +6,7 @@ import { IoPawSharp } from "react-icons/io5";
 
 type Props = {
     children: any;
-    iconsCount: number;
+    iconsCount?: number;
 }
 const ICONS = [IoPawSharp];
 
@@ -50,7 +50,7 @@ const Layout = ({children, iconsCount = 30}:Props) => {
             top: `${position?.y}%`,
             left: `${position?.x}%`,
             transform: `translate(-50%, -50%) rotate(${Math.random() * 360}deg)`,
-            opacity: Math.random() * 0.25 + 0.1, // Przezroczystość od 0.1 do 0.35
+            opacity: Math.random() * 0.25 + 0.2, // Przezroczystość od 0.1 do 0.35
           }}
         />
       );

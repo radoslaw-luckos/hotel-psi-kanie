@@ -1,0 +1,57 @@
+.desc{
+    margin-top: $padding-xs;
+    padding: $padding-xs;
+    &__paragraph{
+        margin: $padding-small;
+        text-align: center;
+        line-height: 1.2rem;
+    }
+    &__image {
+        margin: -$padding-xs;
+        margin-top: $padding-small;
+        margin-bottom: $padding-small;
+    }
+}
+.team{
+    padding: 0 $padding-small;
+    margin-bottom: $padding-small;
+    .section-title{
+        margin-top: 0;
+    }
+    .team-card{
+        margin: $padding-small;
+        margin-top: 7rem;
+        padding-bottom: $padding-small;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-bg;
+        position: relative;
+        border-radius: 2rem;
+        &__image{
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            border: 4px solid $color-highlight;
+        }
+        &__name{
+            margin-top: $padding-small + 5rem;
+        }
+        &__paragraph{
+            font-size: .83rem;
+            text-align: center;
+            padding: $padding-small;
+        }
+    }
+    .controls{
+        color: $color-highlight;
+        width: 50%;
+        margin: auto;
+        padding: $padding-small 0;
+    }
+}
