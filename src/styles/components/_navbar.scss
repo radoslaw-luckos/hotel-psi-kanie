@@ -51,6 +51,34 @@
             flex-flow: column nowrap;
             align-items: center;
             justify-content: space-around;
+            .socials{
+                margin-top: -$padding-medium;
+                background-color: $color-bg;
+                color: $color-highlight;
+                width: 70vw;
+                height: 70vw;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                &__logo{
+                    max-width: 10rem;
+                }
+                &__links{
+                    font-size: 2.5rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    a{
+                        text-decoration: none;
+                        color: $color-highlight;
+                    }            
+        
+                }
+            }
         }
     }
 }

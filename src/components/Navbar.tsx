@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import React, { useState } from 'react'
-import { IoMenu, IoClose, IoPawSharp } from "react-icons/io5";
+import { IoMenu, IoClose, IoPawSharp, IoLogoFacebook, IoLogoInstagram } from "react-icons/io5";
 
 type Props = {}
 
@@ -24,6 +24,13 @@ const Navbar = (props: Props) => {
           <Link className='link' activeClassName='link--active' to='/cennik'><IoPawSharp className='icon'/>Cennik</Link>
           <Link className='link' activeClassName='link--active' to='/galeria'><IoPawSharp className='icon'/>Galeria</Link>
           <Link className='link' activeClassName='link--active' to='/kontakt'><IoPawSharp className='icon'/>Kontakt</Link>
+          <section className="socials">
+            <StaticImage className='socials__logo' src="../images/logo-big.svg" alt='Logo - Psi Hotel Kanie'/>
+            <div className='socials__links'>
+              <Link to=''><IoLogoFacebook/></Link>
+              <Link to=''><IoLogoInstagram/></Link>
+            </div>
+          </section>
         </ul>} 
         <div className="navbar__menu">
           <Link className='link' activeClassName='link--active' to='/'><IoPawSharp className='icon'/>Strona główna</Link>
