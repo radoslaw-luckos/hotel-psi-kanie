@@ -1,0 +1,25 @@
+.prices-table{
+    margin-top: $padding-xs;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    .heading{
+        padding: $padding-xs;
+        text-align: right;
+        font-weight: 600;
+        font-size: .9rem;
+        color: $color-highlight;
+    }
+    .category, .price{
+        padding: $padding-small;
+        border-top: 1px solid #000;
+    }
+    .category {
+        font-weight: 600;
+    }
+    .price {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $color-highlight;
+        text-align: right;
+    }
+}
