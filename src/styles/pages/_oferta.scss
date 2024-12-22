@@ -1,0 +1,16 @@
+.offer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .subtitle{
+        margin: $padding-small;
+        margin-bottom: calc(2*$padding-small);
+        line-height: 1.2rem;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    .button{
+        margin: $padding-medium 0;
+    }
+}
