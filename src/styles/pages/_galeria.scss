@@ -1,0 +1,7 @@
+.gallery{
+    margin: $padding-small 0;
+    &__image{
+        margin-top: 2*$padding-xs;
+        margin-inline: $padding-xs;
+    }
+}
