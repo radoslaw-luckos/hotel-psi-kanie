@@ -1,0 +1,34 @@
+.contact{
+    .text {
+        text-align: center;
+        margin: $padding-small;
+    }
+    .contact-form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100vw;
+        margin: $padding-medium 0;
+        &__info{
+            width: 100%;
+            background-color: $color-highlight;
+            color: $color-bg;
+            padding: $padding-small;
+            .option{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+                padding: $padding-small;
+                p{
+                    padding-top: $padding-xs;
+                    font-family: $font-accent;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

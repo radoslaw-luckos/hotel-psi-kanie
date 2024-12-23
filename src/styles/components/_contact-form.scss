@@ -1,0 +1,62 @@
+.form{
+    width: 100%;
+    background-color: $color-bg;
+    padding: $padding-small;
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    &__group{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        margin: $padding-small;
+        &-title{
+            color: $color-highlight;
+            font-size: 1.1rem;
+            font-family: $font-accent;
+            margin: $padding-xs 0;
+        }
+    }
+    &__label{
+        font-size: 0.8rem;
+        font-family: $font-accent;
+        color: $color-highlight;
+        margin-top: $padding-xs;
+        padding-left: 1rem;
+        
+    }
+    &__input{
+        background: transparent;
+        border: 2px solid $color-highlight;
+        border-radius: 1rem;
+        padding: $padding-xs;
+        padding-left: 1rem;
+        width: 100%;
+        -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+        font-family: $font-primary;
+        &:focus-visible{
+            border:2px solid $color-accent;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+            color: $color-accent;
+        }
+        &::placeholder{
+            font-family: $font-primary;
+        }        
+    }
+    &__submit-btn{
+        margin: auto;
+        padding: $padding-small;
+        font-size: 1rem;
+        font-family: $font-accent;
+        color: $color-highlight;
+        width: 80%;
+        .icon{
+            margin-right: $padding-xs;
+        }
+    }
+}
