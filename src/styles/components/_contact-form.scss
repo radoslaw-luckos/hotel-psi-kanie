@@ -48,6 +48,13 @@
             font-family: $font-primary;
         }        
     }
+    .select{
+        background: $color-bg;
+        &__option{
+            font-family: $font-primary;
+            color: $color-highlight;
+        }
+    }
     &__submit-btn{
         margin: auto;
         padding: $padding-small;
