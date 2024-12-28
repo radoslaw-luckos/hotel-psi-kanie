@@ -36,3 +36,22 @@
         }
     }
 }
+
+@media (min-width: $media-medium){
+    .info-bullet{
+        margin-inline: $padding-medium;
+    }
+}
+
+
+@media (min-width: $media-large){
+    .info-bullet{
+        margin-inline: $padding-big;
+    }
+}
+
+@media (min-width: $media-xlarge){
+    .info-bullet{
+        margin-inline: 2*$padding-big;
+    }
+}

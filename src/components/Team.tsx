@@ -22,12 +22,6 @@ const Team = (props: Props) => {
             {TEAM[ActivePerson].photo}
             <h3 className="section-title section-title--dark team-card__name">{TEAM[ActivePerson].name}</h3>
             {TEAM[ActivePerson].text}
-            {/* <StaticImage className="team-card__image" src='../images/sylwia.jpg' alt='Zdjęcie Sylwi Hawranek'/>
-            <h3 className="section-title section-title--dark team-card__name">Sylwia Hawranek</h3>
-            <p className="team-card__paragraph"><span className="important">Prawdziwa psia superbohaterka.</span>Od 12 lat wolontariuszka w Schronisku Na Paluchu.</p>
-            <p className="team-card__paragraph">Doświadczona w opiece nad obłożnie chorymi psami. Jej dom to pięciogwiazdkowy hotel dla psiaków z Fundacji Przyjaciele Palucha i Pogotowia dla Zwierząt. Wielokrotnie przeprowadzała interwencje z ramienia Towarzystwa Opieki nad Zwierzętami.</p>
-            <p className="team-card__paragraph"><span className="important">Psia psychoterapeutka z nadludzką cierpliwością i empatią.</span> Specjalistka od psów z agresją lękową.</p> */}
-
           </div>
           <div className='controls'>
                   <PiSkipBackBold className='controls__icon' onClick={()=>setPreviousPerson()}/>

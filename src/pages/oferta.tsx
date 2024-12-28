@@ -16,11 +16,11 @@ const OfferPage: React.FC<PageProps> = () => {
     <Layout>
       <section className="offer">
         <h1 className="title">Oferta</h1>
-        <h2 className="subtitle">Psi hotel Kanie - komfort, zabawa i troska.<br/>
+        <h2 className="subtitle">Psi Hotel Kanie - komfort, zabawa i troska.<br/>
         W naszym hotelu Twój pies poczuje się jak w raju!
         </h2>
         <p className='paragraph'>W ramach opłaty za pobyt oferujemy: </p>
-        <ul>
+        <ul className='cards'>
           <OfferCard Icon={MdForest} title='Spacery po lesie' text='Każdy pies zasługuje na dawkę natury.'/>
           <OfferCard Icon={PiHandHeart} title='Zabiegi pielęgnacyjne' text='Kąpiel, czesanie, obcinanie pazurków. Twój pies będzie lśnił!'/>
           <OfferCard Icon={IoTennisball} title='Zabawy' text='Aportowanie, siłowanie i... najważniejsze: przytulanie, głaskanie oraz

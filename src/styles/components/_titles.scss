@@ -34,3 +34,16 @@
     color: $color-highlight;
     font-weight: 700;
 }
+
+@media (min-width: $media-xlarge){
+    .title{
+        font-size: 3rem;
+        margin: $padding-medium;
+    }
+    .subtitle{
+        font-size: 1.6rem;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+}

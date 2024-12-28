@@ -2,6 +2,9 @@
     width: 100%;
     background-color: $color-bg;
     padding: $padding-small;
+    .textarea{
+        resize: none;
+    }
     .subtitle{
         font-size: 1.5rem;
     }
@@ -65,5 +68,31 @@
         .icon{
             margin-right: $padding-xs;
         }
+    }
+}
+
+@media (min-width: $media-medium) {
+    .form {
+        &__group {
+            width: 75%;
+            margin-inline: auto;
+        }
+        &__submit-btn {
+            width: 40%;
+        }
+    }
+}
+
+@media (min-width: $media-large) {
+    .form {
+        &__submit-btn {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: $media-xlarge) {
+    .form{
+        border-radius: 2rem 0 0 2rem;
     }
 }

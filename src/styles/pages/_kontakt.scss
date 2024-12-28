@@ -32,3 +32,39 @@
         }
     }
 }
+
+@media (min-width: $media-large) {
+    .contact {
+        .text{
+            width: 50%;
+            margin-inline: auto;
+        }
+        .contact-form{
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: center;
+            &__info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                .option{
+                    gap:$padding-small;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $media-xlarge) {
+    .contact{
+        .contact-form{
+            max-width: 1000px;
+            margin-inline: auto;
+            &__info{
+                border-radius: 0 2rem 2rem 0;
+                padding: $padding-big 0;
+            }
+        }
+    }
+}

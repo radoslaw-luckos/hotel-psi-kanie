@@ -23,3 +23,38 @@
         text-align: right;
     }
 }
+
+@media (min-width: $media-medium){
+    .prices-table{
+        .category{
+            padding-left: $padding-medium;
+        }
+        .price, .heading{
+            padding-right: $padding-medium;
+        }
+    }
+    
+}
+
+@media (min-width: $media-large){
+    .prices-table{
+        .category{
+            padding-left: $padding-big;
+        }
+        .price, .heading{
+            padding-right: $padding-big;
+        }
+    }
+    
+}
+@media (min-width: $media-xlarge){
+    .prices-table{
+        .category{
+            padding-left: 2*$padding-big;
+        }
+        .price, .heading{
+            padding-right: 2*$padding-big;
+        }
+    }
+    
+}

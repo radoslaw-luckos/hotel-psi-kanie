@@ -11,7 +11,7 @@ type Props = {
 const ICONS = [IoPawSharp];
 
 
-const Layout = ({children, iconsCount = 30}:Props) => {
+const Layout = ({children, iconsCount = 40}:Props) => {
 
   const generateIconsBg = () => {
 

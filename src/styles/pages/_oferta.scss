@@ -14,3 +14,24 @@
         margin: $padding-medium 0;
     }
 }
+
+@media (min-width: $media-medium){
+    .cards{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media (min-width: $media-large){
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: $media-xlarge){
+    .cards{
+        max-width: 1200px;
+    }
+}

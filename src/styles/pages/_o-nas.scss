@@ -55,3 +55,74 @@
         padding: $padding-small 0;
     }
 }
+
+@media (min-width: $media-medium){
+    .wrapper{
+        .desc{
+            &__paragraph{
+                margin:$padding-small $padding-big;
+            }
+        }
+    }
+    .team {
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (min-width: $media-large){
+    .wrapper{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        align-items: center;
+        gap: $padding-medium;
+        .desc{
+            &__paragraph{
+                margin:0 $padding-xs;
+            }
+        }
+    }
+    .team{
+        max-width: 40rem;     
+    }
+}
+    
+
+@media (min-width: $media-xlarge){
+    .wrapper{        
+        .desc{
+            &__paragraph{
+                margin: $padding-medium;
+            }
+        }
+    }
+    .team{
+        max-width: 50rem;
+        .section-title{
+            margin: $padding-medium;
+            margin-bottom: $padding-big+$padding-medium;
+        }
+        .team-card{
+            .section-title{
+                margin: $padding-small;
+                margin-top: $padding-big+2rem;
+            }
+            margin-top: 12rem;
+            &__image{
+                width: 20rem;
+                height: 20rem;
+            }
+            &__name{
+                margin-top: $padding-big+2rem;
+            }
+            &__paragraph{
+                margin: 0 $padding-medium;
+                margin-bottom: $padding-small;
+                font-size: 1rem;
+            }
+        }
+        .controls{
+            padding: $padding-medium 0;
+        }
+    }
+}

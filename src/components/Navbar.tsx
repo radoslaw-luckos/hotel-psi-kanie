@@ -40,7 +40,10 @@ const Navbar = (props: Props) => {
           <Link className='link' activeClassName='link--active' to='/galeria'><IoPawSharp className='icon'/>Galeria</Link>
           <Link className='link' activeClassName='link--active' to='/kontakt'><IoPawSharp className='icon'/>Kontakt</Link>
         </div>
-        
+        <div className='navbar__socials'>
+              <Link to=''><IoLogoFacebook/></Link>
+              <Link to=''><IoLogoInstagram/></Link>
+            </div>
     </nav>
   )
 }

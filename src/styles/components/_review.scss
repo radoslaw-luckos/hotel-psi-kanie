@@ -17,6 +17,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+        justify-content: center;
         margin: $padding-small;
         gap: 2rem;
         .photo{
@@ -55,4 +56,32 @@
             bottom: 0;
         }
     }
+}
+
+@media (min-width: $media-medium){
+    .review{
+        &__content{
+            margin: $padding-medium;
+        }
+    }
+}
+
+@media (min-width: $media-large){
+    .review{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-left: $padding-medium;
+        margin-right: $padding-medium;
+        max-width: 1000px;
+        &__content{
+            margin: $padding-small;
+        }
+        &__presentation{
+            .photo{
+                min-width: 200px;
+                min-height: 200px;
+            }
+        }
+    }
+    
 }

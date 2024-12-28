@@ -58,7 +58,7 @@ const Footer = (props: Props) => {
           </div>
         </section>
         <p className="copyrights">
-© Hotel Psi w Kaniach 2024.<br/>Wszystkie prawa zastrzeżone.<br/>Wdrożenie: Radosław Łuckoś</p>
+© Hotel Psi w Kaniach 2024. Wszystkie prawa zastrzeżone. Wdrożenie: Radosław Łuckoś</p>
     </footer>
   )
 };

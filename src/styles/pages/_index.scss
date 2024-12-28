@@ -2,6 +2,11 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    &__wrapper{
+        display: flex;
+    flex-flow: column;
+    align-items: center;
+    }
     &__image{
         display: none;
     }
@@ -17,4 +22,47 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: $media-medium){
+    .hero{
+        &__mobile-image{
+            width: 60vw;
+            height: 60vw;
+        }
+    }
+}
+
+@media (min-width: $media-large){
+    .hero{
+        margin-top: $padding-small;
+        flex-flow: row-reverse nowrap; 
+        gap: $padding-medium;
+        align-items: center;
+        justify-content: center;
+        &__mobile-image{
+            display: none;
+        }
+        &__image{
+            display: block;
+            width: 50vw;
+            height: 50vw;
+            object-fit: cover;
+            z-index: 0;
+            border-radius: 50%;
+        }
+    }
+    
+}
+
+@media (min-width: $media-xlarge){
+    .hero{
+        
+        &__image{
+            width: 40vw;
+            height: 40vw;
+        }
+    }
 }

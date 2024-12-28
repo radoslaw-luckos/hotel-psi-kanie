@@ -15,12 +15,14 @@ const IndexPage: React.FC<PageProps> = () => {
       <section className="hero">
         <StaticImage src='..\images\hero_mobile.JPG' alt='Hero section image' className='hero__mobile-image'/>
         <StaticImage src='..\images\hero.JPG' alt='Hero section image' className='hero__image'/>
-        <h1 className="title">Hotel dla psów <br/> pełen pasji i miłości</h1>
-        <h2 className="subtitle">U nas Twój pupil <br/> poczuje się jak w domu</h2>
-        <button className='button button--filled button--left'>
-          <IoPawSharp className='button__icon'/>
-          <Link className='button__text' to='/kontakt'>Skontaktuj się z nami!</Link>
-        </button>
+        <div className="hero__wrapper">
+          <h1 className="title">Hotel dla psów <br/> pełen pasji i miłości</h1>
+          <h2 className="subtitle">U nas Twój pupil <br/> poczuje się jak w domu</h2>
+          <button className='button button--filled button--left'>
+            <IoPawSharp className='button__icon'/>
+            <Link className='button__text' to='/kontakt'>Skontaktuj się z nami!</Link>
+          </button>
+        </div>
       </section>
       <section className="reviews">
           <h2 className="section-title">Zobacz jak widzą nas <br/>nasi Goście</h2>
