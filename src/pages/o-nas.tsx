@@ -24,7 +24,44 @@ const AboutPage: React.FC<PageProps>  = () => {
           </section>
           <StaticImage className='desc__image' src="../images/onas.jpg" alt="Zdjęcie zespołu hotelu"/>
         </div>
-          <Team/>
+        <section className="differences">
+          <h2 className="section-title section-title--dark">Co nas wyróznia?</h2>
+          <table className='differences-table'>
+              <thead>
+                  <tr>
+                      <th className='heading'>Psi Hotel Kanie</th>
+                      <th className='heading'>Standardowy psi hotel</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td className='us'>domowe warunki</td>
+                      <td className='standard'>kojce, klatki</td>
+                  </tr>
+                  <tr>
+                      <td className='us'>masaż relaksacyjny, uspokajający, pobudzający krążenie psa</td>
+                      <td className='standard'>brak</td>
+                  </tr>
+                  <tr>
+                      <td className='us'>spacery po malowniczym Lesie Młochowskim</td>
+                      <td className='standard'>brak lub krótkie spacery</td>
+                  </tr>
+                  <tr>
+                      <td className='us'>podstawowa opieka medyczna pielęgniarki</td>
+                      <td className='standard'>brak</td>
+                  </tr>
+                  <tr>
+                      <td className='us'>kąpanie i pielęgnacja (obcinanie pazurków, czesanie, mycie uszu)</td>
+                      <td className='standard'>brak lub dodatkowo płatne</td>
+                  </tr>
+                  <tr>
+                      <td className='us'>transport (przewóz psa samochodem do hotelu i do domu)</td>
+                      <td className='standard'>brak lub dodatkowo płatne</td>
+                  </tr>
+              </tbody>
+            </table>
+        </section>
+        <Team/>
       </Layout>
     </>
     

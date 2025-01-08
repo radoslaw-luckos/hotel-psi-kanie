@@ -53,8 +53,8 @@ const Footer = (props: Props) => {
         <section className="socials">
           <StaticImage className='socials__logo' src="../images/logo-big.svg" alt='Logo - Psi Hotel Kanie'/>
           <div className='socials__links'>
-            <Link to=''><IoLogoFacebook/></Link>
-            <Link to=''><IoLogoInstagram/></Link>
+            <Link to='https://www.facebook.com/people/Psi-hotel-Kanie/61566101737459/?_rdr' target='blank'><IoLogoFacebook/></Link>
+            <Link to='https://www.instagram.com/psi_hotel_kanie/' target='blank'><IoLogoInstagram/></Link>
           </div>
         </section>
         <p className="copyrights">

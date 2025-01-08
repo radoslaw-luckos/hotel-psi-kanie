@@ -12,7 +12,7 @@ const ContactForm = (props: Props) => {
               <label className="form__label" htmlFor="dog-name">Imię psa</label>
               <input className="form__input" type="text" id='dog-name' placeholder='Wpisz imię Twojego psa...'/>
               <label className="form__label" htmlFor="dog-breed">Rasa psa</label>
-              <input className="form__input" type="text" id='dog-breed'/>
+              <input className="form__input" type="text" id='dog-breed'placeholder='Wpisz rasę Twojego psa...'/>
               <label className="form__label" htmlFor="dog-category">Wielkość psa</label>
               <select className="form__input select" name="Wielkość psa" id="dog-category">
                 <option className='select__option' value="">Mały pies(do 10 kg)</option>
@@ -24,13 +24,13 @@ const ContactForm = (props: Props) => {
             <fieldset className="form__group">
               <legend className="form__group-title">Dane właściciela</legend>
               <label className="form__label" htmlFor="owner-name">Imię</label>
-              <input className="form__input" type="text" id='owner-name'/>
+              <input className="form__input" type="text" id='owner-name' placeholder='Wpisz swoje imię...'/>
               <label className="form__label" htmlFor="owner-surname">Nazwisko</label>
-              <input className="form__input" type="text" id='owner-surname'/>
+              <input className="form__input" type="text" id='owner-surname' placeholder='Wpisz swoje nazwisko...'/>
               <label className="form__label" htmlFor="owner-email">Adres e-mail</label>
-              <input className="form__input" type="email" id='owner-email'/>
+              <input className="form__input" type="email" id='owner-email' placeholder='Podaj swój adres email...'/>
               <label className="form__label" htmlFor="owner-phone">Numer telefonu</label>
-              <input className="form__input" type="tel" id='owner-phone'/>
+              <input className="form__input" type="tel" id='owner-phone' placeholder='Podaj swój numer telefonu...'/>
             </fieldset>
             <fieldset className="form__group">
             <legend className="form__group-title">Szczegóły pobytu</legend>
@@ -39,7 +39,7 @@ const ContactForm = (props: Props) => {
               <label className="form__label" htmlFor="stay-end">Do kiedy?</label>
               <input className="form__input" type="date" id='stay-end'/>
               <label className="form__label" htmlFor="stay-message">Wiadomość(opcjonalnie)</label>
-              <textarea className='form__input textarea' name="Wiadomość" id="stay-message" rows={4}></textarea>
+              <textarea className='form__input textarea' name="Wiadomość" id="stay-message" rows={4} placeholder='Tu umieść treść swojej wiadomości...'></textarea>
             </fieldset>
             <button className='button button--bordered button--right form__submit-btn' type="submit"><IoPawSharp className='icon'/>Wyślij wiadomość</button>
           </form>

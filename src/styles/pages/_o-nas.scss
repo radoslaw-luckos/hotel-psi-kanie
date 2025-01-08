@@ -12,6 +12,36 @@
         margin-bottom: $padding-small;
     }
 }
+.differences-table{
+    margin-top: $padding-xs;
+    margin-bottom: $padding-small;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    .heading{
+        padding: $padding-xs;
+        text-align: center;
+        font-weight: 600;
+        font-size: .9rem;
+        color: $color-highlight;
+    }
+    .us, .standard{
+        padding: $padding-small;
+        border-top: 1px solid #000;
+        width: 50%;
+    }
+    .us {
+        font-weight: 700;
+        text-align: center;
+        color: $color-highlight;
+        font-size: .9rem;
+    }
+    .standard {
+        font-weight: 600;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
 .team{
     padding: 0 $padding-small;
     margin-bottom: $padding-small;
@@ -54,6 +84,19 @@
         margin: auto;
         padding: $padding-small 0;
     }
+}
+@media (min-width: $media-medium){
+    .differences-table{
+        .heading{
+            font-size: .95rem;
+        }
+        .us{
+            font-size: .95rem;
+        }
+        .standard{
+            font-size: .9rem;
+        }
+    }  
 }
 
 @media (min-width: $media-medium){
