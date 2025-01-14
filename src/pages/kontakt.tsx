@@ -6,19 +6,11 @@ import SEO from '../components/SEO'
 import { IoFlagSharp, IoMail } from 'react-icons/io5'
 import { HiPhone } from 'react-icons/hi2'
 import ContactForm from '../components/ContactForm'
-import { Helmet } from "react-helmet";
 
 
 const ContactPage: React.FC<PageProps> = () => {
   return (
     <>
-     {/* <Helmet>
-        <script
-          src="https://www.google.com/recaptcha/api.js?render=6LeJZrYqAAAAAJlqCxvE0FPlK835LLmm-6t2K3v9"
-          async
-          defer
-        ></script>
-      </Helmet> */}
       <SEO title='Kontakt' description='Skontaktuj się z nami!'/>
       <Layout>
       <h1 className="title">Kontakt</h1>
@@ -43,6 +35,12 @@ const ContactPage: React.FC<PageProps> = () => {
         </div>
       </section>
       <section className='map'>
+      <iframe
+      className='map__container'
+      referrerPolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjKMhx1l9tMyq1eh9MBVQz6fCg5pa-KoQ&q=Psi+hotel+Kanie,Kanie+Poland"
+      allowFullScreen>
+    </iframe>
       </section>
       </Layout>
     </>
