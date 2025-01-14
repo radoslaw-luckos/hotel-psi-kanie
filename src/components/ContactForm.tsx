@@ -1,12 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React, {useCallback, useEffect, useState} from 'react'
 import { IoPawSharp } from 'react-icons/io5'
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import { httpReqState, site_key } from '../utils/Vars';
-import axios from 'axios';
-import { log } from 'console';
-import { json } from 'stream/consumers';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 const schema = yup.object({
   dog_name: yup.string().required(),
@@ -30,14 +28,34 @@ const ContactForm = () => {
   });
   const [httpReqInAction, setHttpReqInAction] = useState(httpReqState.Unsend)
 
+  const {executeRecaptcha} = useGoogleReCaptcha();
+  const [reCaptchaToken, setReCapthcaToken] = useState('')
 
-  const onSubmit = async (data:FormData,e:React.FormEvent) => {
-    e.preventDefault();
+  const handleReCaptchaVerify = useCallback(async ($event:any) => {
+
+    $event.preventDefault();
+
+    if (!executeRecaptcha) {
+      console.log('Execute ReCaptcha not available yet');
+      return;
+    }
+
+    const token = await executeRecaptcha('signup');
+    setReCapthcaToken(token)
+    console.log('token is',token);
+    
+    handleSubmit((formData) => onSubmit(formData,token))($event);
+
+  },[executeRecaptcha]);
+
+
+  const onSubmit = async (formData:FormData, token:string) => {
+
     setHttpReqInAction(httpReqState.Sending)
     
     const requestOptions = {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({...formData, reCaptchaToken: token}),
       headers: {
           'Content-Type': 'application/json;charset=utf-8'
       },
@@ -55,7 +73,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className='contact-form__form form' action="post" onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form className='contact-form__form form' action="post" onSubmit={handleReCaptchaVerify} noValidate>
             <h2 className="subtitle">Skontaktuj się z nami!</h2>
             <fieldset className="form__group">
               <legend className="form__group-title">Dane zwierzaka</legend>

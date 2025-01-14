@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 import { IoFlagSharp, IoMail } from 'react-icons/io5'
 import { HiPhone } from 'react-icons/hi2'
 import ContactForm from '../components/ContactForm'
-
+import { GoogleReCaptchaProvider } from  'react-google-recaptcha-v3';
 
 const ContactPage: React.FC<PageProps> = () => {
   return (
@@ -17,7 +17,9 @@ const ContactPage: React.FC<PageProps> = () => {
       <section className="contact">
         <p className='text'>Jeśli chcesz dokonać rezerwacji lub masz pytania dotyczące naszego hotelu - nie krępuj się! Skontaktuj się z nami przez nasz formularz kontaktowy lub zadzwoń!</p> 
         <div className="contact-form">
-          <ContactForm />
+          <GoogleReCaptchaProvider reCaptchaKey='6LeiSbcqAAAAAOhy49bJaVnH61exTjwsU86WjyIq'>
+            <ContactForm />
+          </GoogleReCaptchaProvider>
           <div className='contact-form__info'>
             <div className="option">
               <IoFlagSharp/>
