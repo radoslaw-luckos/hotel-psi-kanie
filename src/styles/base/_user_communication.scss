@@ -1,0 +1,28 @@
+.error{
+    font-size: 0.8rem;
+    font-family: $font-accent;
+    color: $color-accent;
+    padding-left: 1rem;
+}
+.message{
+    font-size: 0.9rem;
+    font-family: $font-accent;
+    text-align: center;
+    padding-bottom: $padding-small;
+    animation: bounce 2s ease infinite;
+    &--success{
+        color: #22b753;
+    }
+    &--neutral{
+        color: $color-highlight;
+    }
+}
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}

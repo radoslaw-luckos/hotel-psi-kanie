@@ -6,11 +6,19 @@ import SEO from '../components/SEO'
 import { IoFlagSharp, IoMail } from 'react-icons/io5'
 import { HiPhone } from 'react-icons/hi2'
 import ContactForm from '../components/ContactForm'
+import { Helmet } from "react-helmet";
 
 
 const ContactPage: React.FC<PageProps> = () => {
   return (
     <>
+     {/* <Helmet>
+        <script
+          src="https://www.google.com/recaptcha/api.js?render=6LeJZrYqAAAAAJlqCxvE0FPlK835LLmm-6t2K3v9"
+          async
+          defer
+        ></script>
+      </Helmet> */}
       <SEO title='Kontakt' description='Skontaktuj się z nami!'/>
       <Layout>
       <h1 className="title">Kontakt</h1>

@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import '../styles/globals.scss'
 import { IoPawSharp } from "react-icons/io5";
+import { site_key } from '../utils/Vars';
 
 type Props = {
     children: any;
