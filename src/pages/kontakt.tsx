@@ -17,7 +17,7 @@ const ContactPage: React.FC<PageProps> = () => {
       <section className="contact">
         <p className='text'>Jeśli chcesz dokonać rezerwacji lub masz pytania dotyczące naszego hotelu - nie krępuj się! Skontaktuj się z nami przez nasz formularz kontaktowy lub zadzwoń!</p> 
         <div className="contact-form">
-          <GoogleReCaptchaProvider reCaptchaKey='6LeiSbcqAAAAAOhy49bJaVnH61exTjwsU86WjyIq'>
+          <GoogleReCaptchaProvider reCaptchaKey='6LepKr0qAAAAAGiz1B293krwx301g1bWl7ZR7-ED'>
             <ContactForm />
           </GoogleReCaptchaProvider>
           <div className='contact-form__info'>
@@ -40,7 +40,7 @@ const ContactPage: React.FC<PageProps> = () => {
       <iframe
       className='map__container'
       referrerPolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBjKMhx1l9tMyq1eh9MBVQz6fCg5pa-KoQ&q=Psi+hotel+Kanie,Kanie+Poland"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD9p3YduqXTJAOhDq9QomgDM-kmD_jYZqs&q=Psi+hotel+Kanie,Kanie+Poland"
       allowFullScreen>
     </iframe>
       </section>
