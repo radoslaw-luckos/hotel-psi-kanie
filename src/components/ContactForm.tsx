@@ -61,7 +61,7 @@ const ContactForm = () => {
       },
     };
     try {
-      const response = await fetch("http://localhost:5000/email", requestOptions);
+      const response = await fetch("http://server.psihotelkanie.pl/email", requestOptions);
       if (response.ok) {
         reset();    
         setHttpReqInAction(httpReqState.Done)   
