@@ -3,7 +3,7 @@ import * as React from "react"
 import {Link, type PageProps } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
-import { IoPawSharp, IoCar, IoTennisball, IoFitness, } from 'react-icons/io5'
+import { IoPawSharp, IoCar, IoTennisball, IoFitness, IoAccessibility, } from 'react-icons/io5'
 import { PiHandHeart } from "react-icons/pi";
 import { MdForest } from "react-icons/md";
 import OfferCard from '../components/OfferCard'
@@ -27,6 +27,7 @@ const OfferPage: React.FC<PageProps> = () => {
     tarmoszenie.'/>
           <OfferCard Icon={IoFitness} title='Opieka medyczna' text='Zmiany opatrunków, kroplówki, podawanie leków – wykwalifikowana
     pielęgniarka zadba o zdrowie pupila.'/>
+          <OfferCard Icon={IoAccessibility} title='Masaże' text='Masaż relaksacyjny, uspokajający, pobudzający krążenie psa'/>
           <OfferCard Icon={IoCar} title='Transport' text='Odbierzemy i odwieziemy psa do domu, a także do weterynarza w razie
     potrzeby.'/>
         </ul>

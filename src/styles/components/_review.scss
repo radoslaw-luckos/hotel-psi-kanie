@@ -21,11 +21,13 @@
         margin: $padding-small;
         gap: 2rem;
         .photo{
-            width: 9rem;
-            height: 9rem;
-            object-fit: contain;
-            border: 5px solid $color-highlight;
+            width: 60px;
+            height: 60px;
+            min-height: 60px;
+            min-width: 60px;
+            outline: 5px solid $color-highlight;
             border-radius: 50%;
+            border: none;
         }
         .reviewers-name{
             font-size: 1.2rem;
@@ -47,6 +49,7 @@
         position: absolute;
         font-size: .5rem;
         font-family: $font-primary;
+        color: $color-highlight;
         &--start{
             left: 0;
             top: 0;
@@ -76,11 +79,8 @@
         &__content{
             margin: $padding-small;
         }
-        &__presentation{
-            .photo{
-                min-width: 200px;
-                min-height: 200px;
-            }
+        &_presentation{
+            flex-direction: column;
         }
     }
     

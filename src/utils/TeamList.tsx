@@ -5,9 +5,9 @@ export const TEAM = [
     {
         photo: <StaticImage className='team-card__image' src='../images/sylwia.jpg' alt='Zdjęcie Sylwii Hawranek'/>,
         name: 'Sylwia Hawranek',
-        text: <><p className="team-card__paragraph"><span className="important">Prawdziwa psia superbohaterka.</span>Od 12 lat wolontariuszka w Schronisku Na Paluchu.</p>
+        text: <><p className="team-card__paragraph"><span className="important">Prawdziwa psia superbohaterka.<br/></span>Od 12 lat wolontariuszka w Schronisku Na Paluchu.</p>
         <p className="team-card__paragraph">Doświadczona w opiece nad obłożnie chorymi psami. Jej dom to pięciogwiazdkowy hotel dla psiaków z Fundacji Przyjaciele Palucha i Pogotowia dla Zwierząt. Wielokrotnie przeprowadzała interwencje z ramienia Towarzystwa Opieki nad Zwierzętami.</p>
-        <p className="team-card__paragraph"><span className="important">Psia psychoterapeutka z nadludzką cierpliwością i empatią.</span> Specjalistka od psów z agresją lękową.</p></>
+        <p className="team-card__paragraph"><span className="important">Psia psychoterapeutka z nadludzką cierpliwością i empatią.<br/></span> Specjalistka od psów z agresją lękową.</p></>
     },
     {
         photo: <StaticImage className='team-card__image' src='../images/pawel.jpg' alt='Zdjęcie Pawła Hawranka'/>,
