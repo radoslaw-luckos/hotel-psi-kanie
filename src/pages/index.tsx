@@ -16,7 +16,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <StaticImage src='..\images\hero_mobile.JPG' alt='Hero section image' className='hero__mobile-image'/>
         <StaticImage src='..\images\hero.JPG' alt='Hero section image' className='hero__image'/>
         <div className="hero__wrapper">
-          <h1 className="title">Hotel dla psów <br/> pełen pasji i miłości</h1>
+          <h1 className="title">Hotel dla psów <br/> pełen miłości i pasji</h1>
           <h2 className="subtitle">U nas Twój pupil <br/> poczuje się jak w domu</h2>
           <button className='button button--filled button--left'>
             <IoPawSharp className='button__icon'/>

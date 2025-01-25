@@ -126,7 +126,25 @@
         }
     }
     .team{
-        max-width: 40rem;     
+        max-width: 40rem; 
+        .section-title{
+            margin: $padding-medium;
+        }
+        .team-card{
+            margin-top: $padding-big;
+            .section-title{
+                margin: $padding-small;
+            }
+            &__paragraph{
+                margin: $padding-small;
+            }
+            &__image{
+                width: 15rem;
+                height: 15rem;
+                left: 0;
+                top: 0;
+            }
+        }
     }
 }
     
@@ -141,26 +159,9 @@
     }
     .team{
         max-width: 50rem;
-        .section-title{
-            margin: $padding-medium;
-            margin-bottom: $padding-big+$padding-medium;
-        }
         .team-card{
-            .section-title{
-                margin: $padding-small;
-                margin-top: $padding-big+2rem;
-            }
-            margin-top: 12rem;
-            &__image{
-                width: 20rem;
-                height: 20rem;
-            }
-            &__name{
-                margin-top: $padding-big+2rem;
-            }
             &__paragraph{
                 margin: 0 $padding-medium;
-                margin-bottom: $padding-small;
                 font-size: 1rem;
             }
         }

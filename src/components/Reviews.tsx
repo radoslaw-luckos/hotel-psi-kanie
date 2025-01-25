@@ -19,7 +19,7 @@ const Reviews = (props: Props) => {
     <div className="review">
       <div className="review__presentation">
       {REVIEWS[ActiveReview].photo}
-        <h3 className="reviewers-name">~{REVIEWS[ActiveReview].name}</h3>
+        <h3 className="reviewers-name">{REVIEWS[ActiveReview].name}</h3>
       </div>      
       <div className='review__content'>
         <ImQuotesLeft className='review__quote review__quote--start'/>
