@@ -9,10 +9,20 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 $padding-xs;
-    &__logo img{
-        max-height: 5rem;
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
         object-fit: contain;
+        img{
+            height: 100%;
+            width: auto;
+            max-height: 4rem;
+            object-fit: contain;
+        }
     }
+    
     &__hamburger{
         font-size: 3rem;
         color: $color-highlight;
@@ -112,6 +122,11 @@
 @media (min-width: $media-large){
     .navbar{
         padding: 0 $padding-medium;
+        &__logo {
+            img{
+                max-height: 5rem;
+            }
+        }
         &__hamburger{
             display: none;
         }
