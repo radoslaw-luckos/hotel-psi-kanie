@@ -32,7 +32,7 @@ const PriceListPage: React.FC<PageProps> = () => {
                     <td className='price'>110 PLN</td>
                 </tr>
                 <tr>
-                    <td className='category'>B. duży pies  (powyżej 45 kg)</td>
+                    <td className='category'>Pies olbrzymi (powyżej 45 kg)</td>
                     <td className='price'>140 PLN</td>
                 </tr>
             </tbody>

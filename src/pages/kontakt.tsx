@@ -17,10 +17,10 @@ const ContactPage: React.FC<PageProps> = () => {
       <section className="contact">
         <p className='text'>Jeśli chcesz dokonać rezerwacji lub masz pytania dotyczące naszego hotelu - nie krępuj się! Skontaktuj się z nami przez nasz formularz kontaktowy lub zadzwoń!</p> 
         <div className="contact-form">
-          <GoogleReCaptchaProvider reCaptchaKey='6LeiSbcqAAAAAOhy49bJaVnH61exTjwsU86WjyIq'>
-            {/* <ContactForm /> */}
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJ4_4Zf4iCQ0YGRqUxtMlo6ia3GKv6y6coxO1H53w8d9bgtw/viewform?embedded=true" className='form'>Trwa ładowanie formularza…</iframe>
-          </GoogleReCaptchaProvider>
+          {/* <GoogleReCaptchaProvider reCaptchaKey='6LeiSbcqAAAAAOhy49bJaVnH61exTjwsU86WjyIq'>
+            <ContactForm />            
+          </GoogleReCaptchaProvider> */}
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJ4_4Zf4iCQ0YGRqUxtMlo6ia3GKv6y6coxO1H53w8d9bgtw/viewform?embedded=true" className='form contact-form__google-form'>Trwa ładowanie formularza…</iframe>
           <div className='contact-form__info'>
             <div className="option">
               <IoFlagSharp/>

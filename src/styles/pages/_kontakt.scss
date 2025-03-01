@@ -7,13 +7,24 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        justify-content: center;
         width: 100vw;
+        height: fit-content;
         margin: $padding-medium 0;
+        &__google-form {
+            width: 100%;
+            height: fit-content;
+            min-height: 75rem; 
+            padding: $padding-medium $padding-small;
+            overflow: hidden;
+            padding: auto;
+        }
         &__info{
             width: 100%;
+            height: auto;
             background-color: $color-highlight;
             color: $color-bg;
-            padding: $padding-small;
+            padding: $padding-medium $padding-small;
             .option{
                 display: flex;
                 flex-flow: column nowrap;
@@ -69,6 +80,9 @@
         .contact-form{
             max-width: 1000px;
             margin-inline: auto;
+            &__google-form{
+                min-height: 70rem; 
+            }
             &__info{
                 border-radius: 0 2rem 2rem 0;
                 padding: $padding-big 0;
