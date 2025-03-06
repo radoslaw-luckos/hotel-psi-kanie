@@ -14,11 +14,12 @@
         align-items: center;
         margin: 0;
         padding: 0;
+        max-height: 4rem !important;
         object-fit: contain;
         img{
             height: 100%;
             width: auto;
-            max-height: 4rem;
+            max-height: 4rem !important;
             object-fit: contain;
         }
     }
