@@ -20,7 +20,9 @@
         font-size: 1.1rem;
         font-weight: 700;
         color: $color-highlight;
+        min-width: 120px;
         text-align: right;
+        border: 1px solid red;
     }
 }
 
